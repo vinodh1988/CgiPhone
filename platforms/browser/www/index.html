@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+   
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link href="Jquerym/jquery.mobile-1.4.5.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="Jquerym/jquery-1.12.4.min.js"></script>
+    <script src="Jquerym/jquery.mobile-1.4.5.min.js"></script>
+    <title>Hello World</title>
+    <style>
+        #myheader{
+            background-color: greenyellow;
+            
+        }
+    </style>
+</head>
+
+<body>
+   <div data-role="page" data-theme="b">
+	<div data-role="header"   id="myheader" >
+       <h4>Mobile app from HTML</h4>
+    </div>
+	<div role="main" class="ui-content">
+       <h3>Developers</h3>
+        <ul>
+            <li>Ravi</li>
+            <li>Ramesh</li>
+            <li>Rajesh</li>
+        </ul>
+        <a href="#technologies"><button>Technologies used</button></a>
+    </div>
+	<div data-role="footer">
+       &copy all copyrights reserved, ABC company 2018.
+    </div>
+</div>
+   
+   <div data-role="page" data-theme="b" id="technologies">
+	<div data-role="header"   id="myheader" >
+       <h4>Mobile app from HTML</h4>
+    </div>
+	<div role="main" class="ui-content">
+       <h3>Technologies used</h3>
+        <ul>
+            <li>Jquery Mobile</li>
+            <li>Jquery</li>
+            <li>HTML,CSS and Javascript</li>
+        </ul>
+    </div>
+	<div data-role="footer">
+       &copy all copyrights reserved, ABC company 2018.
+    </div>
+</div>
+
+</body>
+
+</html>
