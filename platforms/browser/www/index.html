@@ -12,48 +12,87 @@
    
     <link rel="stylesheet" type="text/css" href="css/index.css" />
     <link href="Jquerym/jquery.mobile-1.4.5.css" rel="stylesheet">
+    
     <link href="css/style.css" rel="stylesheet">
-    <script src="Jquerym/jquery-1.12.4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="Jquerym/jquery.mobile-1.4.5.min.js"></script>
+    <script src="custom/app.js"></script>
+   
     <title>Hello World</title>
     <style>
         #myheader{
             background-color: greenyellow;
             
         }
+        
+        .mbox{
+            background-color: lightcoral;
+            color:lightgoldenrodyellow;
+            font-family: arial;
+            border-radius: 10px;
+            padding: 5px;
+            margin: 10px;
+        }
+        
     </style>
 </head>
 
 <body>
    <div data-role="page" data-theme="b">
 	<div data-role="header"   id="myheader" >
-       <h4>Mobile app from HTML</h4>
+       <h4>MSGX app</h4>
     </div>
 	<div role="main" class="ui-content">
-       <h3>Developers</h3>
-        <ul>
-            <li>Ravi</li>
-            <li>Ramesh</li>
-            <li>Rajesh</li>
-        </ul>
-        <a href="#technologies"><button>Technologies used</button></a>
+            <label for="user">Username</label>
+            <input type="text" id="name">
+            <label for="password">Password</label>
+            <input type="password" id="password">
+            <button class="btn btn-success" id="log">Login</button>
     </div>
 	<div data-role="footer">
        &copy all copyrights reserved, ABC company 2018.
     </div>
 </div>
    
-   <div data-role="page" data-theme="b" id="technologies">
+   <div data-role="page" data-theme="b" id="home">
 	<div data-role="header"   id="myheader" >
        <h4>Mobile app from HTML</h4>
     </div>
 	<div role="main" class="ui-content">
-       <h3>Technologies used</h3>
-        <ul>
-            <li>Jquery Mobile</li>
-            <li>Jquery</li>
-            <li>HTML,CSS and Javascript</li>
-        </ul>
+       <ul data-role="listview">
+           <li id="members"><a href="#members">Show Members</a></li>
+           <li><a href="#">Post a message</a></li>
+           <li><a href="#">View Messages</a></li>
+       </ul>
+    </div>
+	<div data-role="footer">
+       &copy all copyrights reserved, ABC company 2018.
+    </div>
+</div>
+    
+    <div data-role="page" data-theme="b" id="members">
+	<div data-role="header"   id="myheader" >
+       <h4>Mobile app from HTML</h4>
+    </div>
+	<div role="main" class="ui-content" id="main-content">
+       <h3>Group members</h3>
+       <ul id="group-items">
+        
+       </ul>
+        
+    </div>
+    <div data-role="footer">
+       &copy all copyrights reserved, ABC company 2018.
+    </div>
+</div>
+        
+     <div data-role="page" data-theme="b" id="mem-msg">
+	<div data-role="header"   id="myheader" >
+       <h4>Messages</h4>
+    </div>
+	<div role="main" class="ui-content" id="messages">
+      
+        
     </div>
 	<div data-role="footer">
        &copy all copyrights reserved, ABC company 2018.
