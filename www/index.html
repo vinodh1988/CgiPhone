@@ -29,11 +29,23 @@
             background-color: lightcoral;
             color:lightgoldenrodyellow;
             font-family: arial;
-            border-radius: 10px;
-            padding: 5px;
-            margin: 10px;
+            border-bottom-right-radius: 10px;
+            border-top-left-radius: 10px;
+            padding:10px;
+            margin: 20px;
         }
         
+        textarea{
+            height: 300px;
+            width: 400px;
+        }
+        
+        span{
+            background-color: springgreen;
+            color: darkgreen;
+            border-radius:20px;
+            padding:10px;
+        }
     </style>
 </head>
 
@@ -48,6 +60,7 @@
             <label for="password">Password</label>
             <input type="password" id="password">
             <button class="btn btn-success" id="log">Login</button>
+          <a href="#register">Click to register</a>
     </div>
 	<div data-role="footer">
        &copy all copyrights reserved, ABC company 2018.
@@ -61,7 +74,7 @@
 	<div role="main" class="ui-content">
        <ul data-role="listview">
            <li id="members"><a href="#members">Show Members</a></li>
-           <li><a href="#">Post a message</a></li>
+           <li><a href="#postmessage">Post a message</a></li>
            <li><a href="#">View Messages</a></li>
        </ul>
     </div>
@@ -75,10 +88,7 @@
        <h4>Mobile app from HTML</h4>
     </div>
 	<div role="main" class="ui-content" id="main-content">
-       <h3>Group members</h3>
-       <ul id="group-items">
-        
-       </ul>
+     
         
     </div>
     <div data-role="footer">
@@ -86,7 +96,7 @@
     </div>
 </div>
         
-     <div data-role="page" data-theme="b" id="mem-msg">
+<div data-role="page" data-theme="b" id="mem-msg">
 	<div data-role="header"   id="myheader" >
        <h4>Messages</h4>
     </div>
@@ -98,7 +108,46 @@
        &copy all copyrights reserved, ABC company 2018.
     </div>
 </div>
-
+  <!--- Register page  -->  
+<div data-role="page" data-theme="b" id="register">
+	<div data-role="header"   id="myheader" >
+       <h4>Messages</h4>
+    </div>
+	<div role="main" class="ui-content">
+      
+           <label for="user">Username</label>
+            <input type="text" id="rname">
+            <label for="password">Password</label>
+            <input type="password" id="rpassword">
+             <label for="password">Confirm Password</label>
+            <input type="password" id="cpassword">
+            <button class="btn btn-success" id="reg">Register</button>
+    </div>
+	<div data-role="footer">
+       &copy all copyrights reserved, ABC company 2018.
+    </div>
+</div>
+    
+    <-- Post message -->
+    <div data-role="page" data-theme="b" id="postmessage">
+	<div data-role="header"   id="myheader" >
+       <h4>Messages</h4>
+    </div>
+	<div role="main" class="ui-content">
+          <label for="member">
+               <select id="gmembers"></select> 
+          </label>
+          <label for="message">Message</label>
+        <textarea id="gmsg"> </textarea>
+        <button id="postbtn">Post Message</button>
+    </div>
+	<div data-role="footer">
+       &copy all copyrights reserved, ABC company 2018.
+    </div>
+</div>
+    
+    </-->
+<script src="custom/messages.js"></script>
 </body>
 
 </html>
